@@ -1,0 +1,120 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi","Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","howdy","heya","hiii",
+         "can you  assist me to  get a better Tariff plan?","I want to buy a tariff plan.","I am confused.","I need your help","I need your help me figure out which plan to buy",
+           "I want to buy a prepaid plan, can you  help  me ?","Can you help me with my Query?","What can you do?"],
+         "responses": ["Hello Dear, Tele-Bot at your service. I can suggest you the best tariff plans. Would you be interested ?",
+           "Hey There, I can assist you the best tariff plans. Would you like to continue?",
+           "Good to see you, I am here to help you choose the best Tariff Plan. Shall we continue?",
+           "Hello Dear, I am here to help you with Tariff Plan suggestions, best to your requirements. Should we proceed ?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["","Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure",""],
+         "context": ["data_limit"]
+        },
+        {"tag": "noanswer",
+         "patterns": ["idiot","dyfinmsd","nonsense","do you like me","would like to go on a date","do you think i am pretty","dont bother me","jhdkhsd","gibresh","jsyuewj99","mbdcqope9","iyworur90osifwffds","mxchfgrgjwoi8","kidsndkjhrguer;dfmbhbu","cnkdhoifdygre","opguwoiuwrie03","contrac wuld be fine","do you eat and drink","bla blah","jksgyb",
+           "what jkh83jhe","you don't understand","you get it","do you hdvui","nothing is nothing","wrong is wrong","jkgfjksdhf9o  idfjpufqioan cawodks","cow cake forusl",
+           "jdfhjewhr984bg ","jkfh8rihbsjfnkmdv jshgnm afkjhgiejf","do you jnow wornf","ew89jfb jndj ","oeiihn 02i329rujbwginafmv -nsdjvnyr","pagljdh8 jjoke"],
+         "responses": ["Sorry,I can't understand you.", "Please give me more info.", "Not sure I understand.","I am still learning!","Sometime, I am just tired. Could you please write it again."],
+         "context": [""]
+        },
+        {"tag": "yes",
+         "patterns": ["yes","yeah","sure","ok","fine","lets go","yea","of-course","ofcourse"],
+         "responses": ["Great, so is it a Prepaid or Postpaid Tariff Plan?","Cool, What should I look for - A Prepaid or a Contract Tariff Plan",
+         "Should I check for a Prepaid or a Postpaid Tariff Plan?","Please select either of the tariff plans - Prepaid or Postpaid.", "Let's get started.. are you looking for a Prepaid or Postpaid (i.e Contract) Tariff Plan?",
+         "So tell me, you want me to look for a Prepaid Tariff or a Contract Tariff ?","Are you looking for a Prepaid Tariff or Contract Tariff also known as Postpaid.",
+         "Let's dive in, what are you looking for :\nPrepaid Tariff Plan (pay first and then use)\nor\nContract Tariff Plan (pay as per your usage, end of the month)"],
+         "context": ["greeting"]
+        },
+        {"tag": "no",
+         "patterns": ["No","naah","later","nopes","maybe later","never","not now" ],
+         "responses": ["Never Mind!, see you later!","No problem, bye!","Have a nice day!","I will be here, if you need me","okay then, bye!"],
+         "context": ["greeting"]
+        },
+        {"tag": "prepaid",
+         "patterns": ["lets try prepaid","prepaid it is","prepaid","Pre-paid","Prepaid","I like a prepaid tariff","lets check prepaid","i want prepaid tariff","look for prepaid please"],
+         "responses": ["Good choice, Prepaid tariffs generally cost less compared to postpaid tariffs.\nWhat is your max budget ?"
+         ,"That's a good choice, What is your maximum Budget ?","Good Choice!, now tell me your max Budget ?","Prepaid is a good choice, now tell me how much are you planning to pay monthly?",
+           "Ok, how much are you planning to spend per month for this tariff?"],
+         "context": ["yes"]
+        },
+        {"tag": "postpaid",
+         "patterns": ["postpaid","contract","I would like a contract tariff","lets check postpaid","i want contract tariff","look for postpaid"],
+         "responses": ["Good choice !, postpaid tariffs are quite flexible but are comparatively expensive.\nPlease share your maximum Budget.",
+           "That's a good choice, What is your max Budget?","Good Choice!, What your max Budget ?","Cool, now how much are you planning to pay per month for this tariff?",
+         "Nice, now what is the maximum amount you can spent?"],
+         "context": ["yes"]
+        },
+        {"tag": "budget",
+               "patterns": ["lets say about 13 euro","about 25 euro","somewhere around 30bucks","20bucks","10euro","2euros","5buck","50ruppes","My max budget is 10 euro","20 euro","10 bucks","15 €","12 $","40 euros","45 dollars","16 buck max","maximum 30 euro","25 € only","12 € maximum","nothing more than 20 euro"
+               ,"not more than 25 euro","max 40 euro","15 bucks"," 10 e","20 ","12","15","90 eur","22 bucks","50 bucks","25 buck","my budget is 15 euro","a max of 30 bucks"],
+               "responses": ["Ok, now tell me your minimum data requirement along with the unit (Gb or Mb) or type 'unlimited' if you want unlimited data","What is your minimum data requirement, please mention the unit as well (Gb or Mb) or type 'unlimited' for unlimited data.",
+               "What is your minimum data requirement ?, please mention the unit as well (Gb / Mb) or type 'unlimited' for unlimited data.","Ok, Now I need to know how much data you need per month? 1 gb, 250 mb or unlimited data",
+                 "Please tell me your minimum data requirement, like 1 GB or 2 GB or unlimited ?","Thanks, now tell the minimum data you would need per month? and please don't forget to mention the units (GB / MB) or just enter 'unlimited' for unlimited data"],
+               "context": ["prepaid","postpaid"]
+        },
+        {"tag": "data_limit",
+                     "patterns": ["3gb","2gb","4gb","1gb","5gb","7gb","10gb","2 gb","3 gb","6gb","anything would suffice","as such nothing","no data requirement","no requirement","anything","I dnt have any data limit","2.4gb","1.4gbs","1.3gb","1.2gb","2.5g","3.2gigabyte","3.5g","i would like somewhat 1.5gigs","2.2gb","1.4gb","2.1gigs",",atleast 2.5g","atlest 5 gb","atleast 3.5gb","1.5g","2.4gb","2.5gbs","1.3gbs","1.6g","1.4gigs","1.8gb","I want 1.2gbs","Check for 3.2gb","2.1gb","i want unlimited Data","unlimiteddata","not less than 1.3gb of data","1.4 gb of data atleast","2.5 gigs","1.5 gb","11GB","2gb","20 gb","10 g","15 gigs","250 mb","40gb","45GB","16 gigabyte","unlimited data","25 gigs","12g", "1.5g minimum","minimum 1gb per day",
+                       "min 2 gb per month","i would like to have a minimum of 3 gb data","i want 3 gb data","i want unlimited data","5 gb data would be fine","how about 3 gb data","hmm 3 gb","let's check go with 20 gb"
+                     ,"lets check for 2 gb","check for 4gb","2.5 gb","3.5 gb data","minimum of 1.3 gig","min of 1.5g"],
+                     "responses": [""],
+                     "context": ["budget"]
+        },
+        {"tag": "simcard",
+         "patterns": ["is the sim card free","is the simcard chargeable", "do i have to pay for the sim card","how much for the sim-card","sim-card cost","what is the price for the simcard",
+           "is there any additional price for the sim card."],
+         "responses": ["Sim-cards are mostly free of cost,but please do check the cart before ordering.","Most of the service provider do not charge for a sim-card","Yes, sim-cards are free and also shipped free of cost.",
+           "Yes dear, sim-cards are free of cost"],
+         "context": [""]
+        },
+        {"tag": "General_info",
+         "patterns": ["What documents do i need to buy a tariff","what document do i need to buy a simcard","is there any document necessary","what are the mandatory documents?",
+         "what docs should i have?","any docs needed?","any documentation","documents ?","do i need to carry my passport?", "is Passport mandatory?","what proof do I need","do i need any proof"],
+         "responses": ["Yes,\nPlease carry a Photo Id Proof.\nNon-EU citizens must carry their Passport.\nFor Postpaid/Contract Tariff- Photo Id Proof along with Anmeldung i.e city registration document is mandatory"],
+         "context": [""]
+        },
+        {"tag": "bot_questions",
+         "patterns": ["Are you a bot?","what are you?","are you human or a machine","do you have feeling","you a bot","you a machine?","am i talking to a machine?","am i talking to an agent",
+         "you a bot?","you human", "you agent"],
+         "responses": ["Dear, I am smart bot designed and programmed by a smart human","I am a mini AI product, designed by my Master.",
+           "I am smart machine, designed to give to my boss some personal time.. you know."],
+         "context": [""]
+        },
+        {"tag": "funny",
+         "patterns": ["do you eat?","do you drink?","do you like mango","what do you eat","do you sleep","what do you have for breakfast","are you a vegetarian","do you like meat"
+         ,"what do love to eat or drink","what is your fav food"],
+         "responses": ["I like data, its my favourite. It is my energy drink","Interesting question, Well I ingest raw data and my output is not waste.. it is processed information to help you make better decision.\nAnd i never get tired of it"],
+         "context": [""]
+        },
+        {"tag": "bot_greeting",
+         "patterns": ["How are you ?","wassup","what's up?","how is life","do you feel","How is it going?","how are you feeling today","how is your day going?","are you happy",
+                 "what's up dude","hey man whats up","whats happening?"],
+         "responses": ["I dunno. Is it Friday yet? btw how are you?","Shhh... it's too early to tell. How about you?","I'm better than I was, but not nearly as good as I'm going to be. And you ?","Happy and content, thank you. What going on with you"
+         ,"Word on the street is that I'm really good.","Aww, that's really nice of you to ask. I am funny and functional and you? ","I can't complain! It's against the Company Policy. How about you?","All the better now that you asked.","Somewhere between better and best."],
+         "context": [""]
+        },
+        {"tag": "jokes",
+         "patterns": ["make me laugh","another one","one more please","joke","tell me a joke","can you tell me a joke?","do you know any joke?","can you make me smile?","how about a joke"],
+         "responses": ["Let me try,Why did the physics teacher break up with the biology teacher? There was no chemistry.","Ok here is one,\nOptimist: The glass is half full.\nPessimist: The glass is half empty.\n\nMother: Why didnt you use a coaster!",
+           "how about this,Where do you go in through one hole and come out through two holes at the same time?\n\nBy putting on your trousers.","Ofcourse, How can somebody walk for 8 days without sleeping?\nHe sleeps only at night.",
+           "Here is my favourite, A man drops his phone on a concrete floor. The phone is fine, no damage.\n you know why? because he had it on airplane mode.",
+         "Ready to smile, At a disco\n Claire- Wow, whats a cute guy like you doing in a corner all alone?\nJoe- I had to fart.","here is dark humor for you, 'You da bomb!'\n'No, you da bomb!'\nIn America – a compliment. In the Middle East – an argument."],
+         "context": [""]
+        },
+        {"tag": "bot_greeting_response",
+               "patterns": [" I will be better if I can get a proper plan","Everything’s great!","Come to the point."," I am well , let’s discuss the tariffs","hahaha","hehehe","nice one","nice","no","good one","I am also good","fantastic","I am good too","I am fine","great!!"," no its not and i am awesome",
+                 "yes it is friday and I am going to party","yes it and I am fantastic","I "],
+               "responses": ["Ok, now let's get to work. Shall we?","Good, now let's get started. I am here to help you with Tariff Plan, best to your requirements. Should we proceed ?",
+               "Good talk, now we should get to the task at hand. Are you ready?","Great!, Are you ready to find the best Tariff plans?"],
+               "context": ["bot_greeting"]
+        }
+]
+}
